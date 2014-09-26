@@ -8,7 +8,7 @@ int main()
 {
     pid_t pid;
 
-    char *message;
+    char const *message = NULL;
 
     int n;
     int exit_code;
@@ -34,13 +34,14 @@ int main()
             break;
     }
 
-    for (; n > 0; n--) // 父进程
+    for (; n > 0; n--)
     {
         puts(message);
         sleep(1);
     }
 
-    if (0 != pid)
+    if (0 != pid) // 父进程
+
     {
         int stat_val;
         pid_t child_pid;
