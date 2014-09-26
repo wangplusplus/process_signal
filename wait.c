@@ -8,7 +8,7 @@ int main()
 {
     pid_t pid;
 
-    char const *message = NULL;
+    const char *message = NULL;
 
     int n;
     int exit_code;
