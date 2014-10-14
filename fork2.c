@@ -26,7 +26,7 @@ int main()
             break;
         default:
             message = "This is the parent";
-            n = 3;
+            n = 5;
             break;
     }
 
